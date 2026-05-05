@@ -4,6 +4,7 @@ import { generateSidebar, generateNavItems, generateSidebarMappingForSubdirector
 
 export default defineConfig({
   ignoreDeadLinks: true,
+  base: '/health-ai/',
   title: 'Health AI',
   description: '大健康知识库：养生保健、疾病预防、健康管理',
   lang: 'zh-CN',
