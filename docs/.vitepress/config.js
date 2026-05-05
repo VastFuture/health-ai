@@ -1,8 +1,11 @@
+import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vitepress'
+import { generateSidebar, generateNavItems, generateSidebarMappingForSubdirectories } from './sidebar.js'
 
 export default defineConfig({
+  ignoreDeadLinks: true,
   title: 'Health AI',
-  description: '大健康 AI 知识库',
+  description: '大健康知识库：养生保健、疾病预防、健康管理',
   lang: 'zh-CN',
   cleanUrls: true,
   head: [
@@ -11,16 +14,15 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: '概览', link: '/md/overview' },
+      { text: '收录文章', link: '/md/articles/' },
+      { text: '养生保健', link: '/md/health/' },
+      { text: '疾病预防', link: '/md/disease/' },
+      { text: '健康管理', link: '/md/lifestyle/' },
     ],
-    sidebar: [
-      {
-        text: '概览',
-        items: [
-          { text: '关于', link: '/md/overview' },
-        ]
-      }
-    ],
+    sidebar: {
+      '/md/': generateSidebar('docs/md', '/md/'),
+      ...generateSidebarMappingForSubdirectories('docs/md', '/md/')
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/VastFuture/health-ai' },
     ],

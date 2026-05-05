@@ -3,21 +3,21 @@ layout: home
 
 hero:
   name: Health AI
-  text: 大健康 AI 知识库
-  tagline: 行业洞察 · 技术方案 · 案例分析
+  text: 大健康知识库
+  tagline: 养生保健 · 疾病预防 · 健康管理
   actions:
     - theme: brand
       text: 开始探索
-      link: /md/overview
+      link: /md/health/
     - theme: alt
       text: 在 GitHub 上查看
       link: https://github.com/VastFuture/health-ai
 
 features:
-  - title: 行业洞察
-    details: 追踪大健康行业趋势、政策动态与市场机会。
-  - title: 技术方案
-    details: AI 在医疗、健康管理、药物研发等场景的应用方案。
-  - title: 案例分析
-    details: 收录国内外典型案例，深度剖析成功要素。
+  - title: 养生保健
+    details: 中医养生、食疗调理、运动健身等日常保健知识。
+  - title: 疾病预防
+    details: 常见疾病预防、早期信号识别、健康筛查指南。
+  - title: 健康管理
+    details: 科学饮食、规律作息、心理健康等生活方式指导。
 ---

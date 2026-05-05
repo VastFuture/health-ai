@@ -1,7 +1,7 @@
 {
   "name": "health-ai",
   "version": "1.0.0",
-  "description": "大健康 AI 知识库",
+  "description": "大健康知识库",
   "type": "module",
   "scripts": {
     "dev": "vitepress dev docs",
